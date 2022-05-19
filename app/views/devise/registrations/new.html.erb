@@ -24,7 +24,7 @@
     <div class='form-text-wrap'>
       <label class="form-text">性別</label>
     </div>
-    <%# <%= f.collection_select(:sex_id, Burden.all, :id, :who, {}, {class:"select-box"}) %> %>
+    <%= f.collection_select(:gender_id, Gender.all, :id, :gender, {}, {class:"gender-select"}) %>
   </div>
 
     <div class="form-group">
