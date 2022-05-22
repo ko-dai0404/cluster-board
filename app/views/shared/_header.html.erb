@@ -1,0 +1,32 @@
+<div class="header">
+  <% if user_signed_in? %>
+    <div class="title">
+     <%= link_to "Cluster Board", root_path, class: "title_name" %>
+    </div>
+    <div class="header_menu">
+      <div class="search">
+        <%= form_with(url: search_rooms_path, local: true, method: :get, class: "search-form") do |form| %>
+        <%= form.text_field :keyword, placeholder: "掲示板を検索する", class: "search-input" %>
+        <%= form.submit "検索", class: "search-btn" %>
+        <% end %>
+      </div>
+            <div class="mypage">
+        <%= link_to current_user.nickname, "#", class: "user_name_btn" %>
+      </div>
+      <div class="new_board">
+      <%= link_to "掲示板作成", "#", class: "new-board-btn" %>
+      </div>
+      <div class="log_out">
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "log_out_btn" %>
+      </div>
+    </div>
+  <% else %>
+    <div class="title">
+     <%= link_to "Cluster Board", root_path, class: "title_name" %>
+    </div>
+    <div class="header_menu">
+      <%= link_to "ログイン", new_user_session_path, class: "log_in" %>
+      <%= link_to "新規登録", new_user_registration_path, class: "sign_up" %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,65 @@
+.header {
+  width: 100vw;
+  height: 15vh;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-left: 40px;
+}
+.title_name {
+  font-size: 30px;
+  color: #1574FF;
+  text-decoration: none;
+}
+
+.header_menu {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.sign_up {
+  font-size: 25px;
+  color: #1574FF;
+  text-decoration: none;
+}
+
+.log_in {
+  font-size: 25px;
+  color: #1574FF;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.log_out_btn {
+  font-size: 25px;
+  color: #1574FF;
+  text-decoration: none;
+}
+
+.search {
+  margin-right: 50px;
+}
+
+.mypage {
+  margin-right: 50px;
+}
+.user_name_btn {
+  font-size: 25px;
+  color: #1574FF;
+  text-decoration: none;
+}
+
+.new_board {
+  margin-right: 50px;
+}
+
+.new-board-btn {
+  font-size: 25px;
+  color: #1574FF;
+  text-decoration: none;
+}

@@ -1,3 +1,25 @@
-<%= link_to "新規作成", new_user_registration_path %>
-<%= link_to "ログイン", new_user_session_path %>
-<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<div class="outer">
+  <%= render "shared/header" %>
+  <div class="main">
+      <%= render "shared/side" %>
+      <div class="main_right">
+        <div class="list_top"><h1>掲示板一覧</h1></div>
+        <div class="board_list">
+
+          <div class="board">
+            <div class="board_image">
+            </div>
+            <div class="board_main">
+              <div class="board_title">
+              <h1 class="title_text">アバター作成教えます！</h1>
+              </div>
+              <div class="board_sub">
+              <p class="sub_text">仲間募集！</p>
+              <p class="sub_text">2022.06.01 13:30</p>
+              </div>
+            <div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
