@@ -35,7 +35,7 @@
   margin-right: 50px;
 }
 
-.log_out {
+.log_out_btn {
   font-size: 25px;
   color: #1574FF;
   text-decoration: none;
@@ -43,6 +43,15 @@
 
 .search {
   margin-right: 50px;
+}
+
+.mypage {
+  margin-right: 50px;
+}
+.user_name_btn {
+  font-size: 25px;
+  color: #1574FF;
+  text-decoration: none;
 }
 
 .new_board {

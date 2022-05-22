@@ -10,11 +10,14 @@
         <%= form.submit "検索", class: "search-btn" %>
         <% end %>
       </div>
+            <div class="mypage">
+        <%= link_to current_user.nickname, "#", class: "user_name_btn" %>
+      </div>
       <div class="new_board">
       <%= link_to "掲示板作成", "#", class: "new-board-btn" %>
       </div>
-      <div class="mypage">
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "log_out" %>
+      <div class="log_out">
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "log_out_btn" %>
       </div>
     </div>
   <% else %>
