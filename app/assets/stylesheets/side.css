@@ -8,6 +8,7 @@
 .li_name {
   font-size: 20px;
   margin-bottom: 25px;
+  list-style: none;
 }
 
 .li_name_btn {
