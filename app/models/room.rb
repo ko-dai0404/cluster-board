@@ -1,6 +1,6 @@
 class Room < ApplicationRecord
 
-  validates :nickname,    presence: true, length: { maximum: 20 }
+  validates :room_name,   presence: true, length: { maximum: 20 }
   validates :category_id, numericality: { other_than: 1 }
   validates :content,     presence: true
 
