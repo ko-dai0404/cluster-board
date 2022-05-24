@@ -31,6 +31,9 @@ h1 {
   color: #1574FF;
 }
 
+
+/* 掲示板リスト */
+
 .board_list {
   width: 100%;
   height: 90%;
@@ -87,4 +90,11 @@ h1 {
 .sub_text {
   padding: 0 30px;
   color: black;
+}
+
+.room-box-img {
+  height: 15%;
+  width: 90%;
+  background-color: rgb(205, 202, 202);
+  object-fit: contain;
 }

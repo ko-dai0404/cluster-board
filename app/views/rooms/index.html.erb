@@ -4,11 +4,13 @@
       <%= render "shared/side" %>
       <div class="main_right">
         <div class="list_top"><h1>掲示板一覧</h1></div>
-        <div class="board_list">
 
+
+        <div class="board_list">
           <div class="board">
           <% @rooms.each do |room| %>
             <div class="board_image">
+            <%= image_tag room.image ,class:"room-box-img" %>
             </div>
             <div class="board_main">
               <div class="board_title">
@@ -16,13 +18,17 @@
               <%= link_to room.room_name, room_messages_path(room) %>
               </div>
               <div class="board_sub">
-              <p class="sub_text">仲間募集！</p>
-              <p class="sub_text">2022.06.01 13:30</p>
+              <%# <p class="sub_text">仲間募集！</p> %>
+              <%= link_to room.category.category, room_messages_path(room) %>
+              <%# <p class="sub_text">2022.06.01 13:30</p> %>
+              <%= link_to room.created_at, room_messages_path(room) %>
               </div>
             <div>
           <% end %>
           </div>
         </div>
+
+        
       </div>
   </div>
 </div>
