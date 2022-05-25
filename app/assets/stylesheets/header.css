@@ -63,3 +63,10 @@
   color: #1574FF;
   text-decoration: none;
 }
+
+
+/* 掲示板ページ*/
+
+.board_header {
+  padding: 0 40px;
+  }
