@@ -1,0 +1,26 @@
+<div class="message">
+
+  <div class="board_main">
+
+    <div class="board_image">
+      <%= image_tag room.image.variant(resize: '100x100') ,class:"room-box-img" %>
+    </div>
+
+    <div class="board_right">
+      <div class="board_title">
+        <%= room.room_name %>
+      </div>
+      <div class="board_sub">
+        <div>
+        <%= room.category.category %>
+        </div>
+        <div>
+        <%= room.created_at %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

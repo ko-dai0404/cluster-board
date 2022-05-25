@@ -1,100 +1,43 @@
 .outer {
-  width: 100vw;
-  height: 100vh;
-  background-color: #FFFFFF;
-}
-
-.main {
-  width: 100vw;
-  height: 85vh;
   display: flex;
 }
 
 .main_right {
-  width: 85vw;
-  height: 100%;
-  background-color: #1574FF;
-  margin-right: 10px;
+  background-color: darkgrey;
 }
-
-.list_top {
-  width: 100%;
-  height: 10%;
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 20px;
-  color: #1574FF;
-}
-
-
-/* 掲示板リスト */
 
 .board_list {
-  width: 100%;
-  height: 90%;
-  background-color: #1574FF;
+  height: calc(100vh - 15vh);
+  padding: 46px 40px 0;
   overflow: scroll;
 }
 
-.board {
-  width: 100%;
-  height: 30%;
-  margin: 10px;
-  border-bottom: 1px solid black;
-  display: flex;
-}
-
-.board_image {
-  width: 15%;
-  height: 90%;
-  margin: 10px;
-  background-color: #FFFFFF;
+.message {
+  margin: 10px 0 0 0;
 }
 
 .board_main {
-  width: 85%;
-  height: 90%;
-  margin: 10px;
-  background-color: #FFFFFF;
+  display: flex;
+  border-bottom: 1px solid black;
 }
 
-.board_title {
-  width: 100%;
-  height: 70%;
-  border-bottom: 1px solid black;
-  background-color: gray;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
+.board_right {
+  width: calc(100vw - 200px);
+
+  padding: 10px;
+  padding-top: 20px;
 }
 
 .board_sub {
-  width: 100%;
-  height: 30%;
-  background-color: gray;
+  color: #434a54;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.title_text {
-  font-size: 50px;
+.board_title {
   color: black;
-}
-
-.sub_text {
-  padding: 0 30px;
-  color: black;
-}
-
-.room-box-img {
-  height: 15%;
-  width: 90%;
-  background-color: rgb(205, 202, 202);
-  object-fit: contain;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
