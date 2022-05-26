@@ -79,6 +79,8 @@
   width: 30vw;
   height: 15vh;
   background-color: red;
+  display: flex;
+  justify-content: center;
 }
 
 .board_h_main {
