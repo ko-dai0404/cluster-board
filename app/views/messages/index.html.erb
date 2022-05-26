@@ -4,6 +4,25 @@
     <%= image_tag @room.image.variant(resize: '100x100') ,class:"" %>
   </div>
   <div class="board_h_main">
+    <div class="board_h_title">
+    <%= @room.room_name %>
+    </div>
+    <div class="board_h_content">
+      <div class="board_content_left">
+      掲示板内容 ：
+      </div>
+      <div class="board_content_right">
+      <%= @room.content %>
+      </div>
+    </div>
+    <div class="boaed_h_sub">
+      <div class="board_h_category">
+      <%= @room.category.category %>
+      </div>
+      <div class="boaed_h_adm">
+      管理者 ： ユーザー名
+      </div>
+    </div>
   </div>
 
 </div>
