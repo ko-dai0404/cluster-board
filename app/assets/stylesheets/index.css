@@ -132,3 +132,7 @@
 .hidden1 {
   display: none;
 }
+
+.field_with_errors {
+  display: contents;
+}
