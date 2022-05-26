@@ -1,4 +1,4 @@
-<div class="message">
+<div class="boards">
 
   <div class="board_main">
 
@@ -8,7 +8,7 @@
 
     <div class="board_right">
       <div class="board_title">
-        <%= room.room_name %>
+        <%= link_to room.room_name, room_messages_path(room) %>
       </div>
       <div class="board_sub">
         <div>
@@ -21,6 +21,5 @@
     </div>
 
   </div>
-
 
 </div>
