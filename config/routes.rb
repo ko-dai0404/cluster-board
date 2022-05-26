@@ -5,6 +5,6 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
-    resources :messages, only: [:index]
+    resources :messages, only: [:index, :create]
   end
 end

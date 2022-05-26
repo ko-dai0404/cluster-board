@@ -90,7 +90,7 @@
 }
 
 .form {
-  background-color: black;
+  background-color: gray;
   height: 70px;
   padding: 10px 20px;
   display: flex;
@@ -129,6 +129,6 @@
   text-align: center;
 }
 
-.hidden {
+.hidden1 {
   display: none;
 }

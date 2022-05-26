@@ -3,7 +3,6 @@
   <div class="message_list">
       <div class="upper-message">
         <div class="message-user">
-          Tom
         </div>
         <div class="message-date">
           2020/3/31(Wed) 12:43:30
@@ -33,15 +32,15 @@
     </div>
   </div>
 
-  <div class="form">
-    <div class="form-input">
-      <input class="form-message" placeholder= "type a message">
-      <label class="form-image">
-        <span class="image-file">画像</span>
-        <input type="file" class="hidden">
-      </label>
-    </div>
-    <input class="form-submit" type="submit" value="送信">
+  <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+  <div class="form-input">
+    <%= f.text_field :message, class: 'form-message', placeholder: 'type a message' %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <%= f.file_field :image, class: 'hidden1' %>
+    </label>
   </div>
+  <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
 
 </div>
