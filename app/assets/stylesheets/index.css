@@ -47,11 +47,6 @@
 .wrapper {
   display: flex;
 }
-.board_header {
-  width: 100vw;
-  height: 15vh;
-  background-color: black;
-}
 
 .message {
   background-color: #1574FF;

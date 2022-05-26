@@ -69,4 +69,21 @@
 
 .board_header {
   padding: 0 40px;
-  }
+  width: 100vw;
+  height: 15vh;
+  background-color: black;
+  display: flex;
+}
+
+.board_h_image {
+  width: 30vw;
+  height: 15vh;
+  background-color: red;
+}
+
+.board_h_main {
+  width: calc(100vw - 30vw);
+  height: 15vh;
+  background-color: red;
+  padding: 5px 40px 0;
+}
