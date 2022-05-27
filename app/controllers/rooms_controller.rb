@@ -1,5 +1,6 @@
 class RoomsController < ApplicationController
-  before_action :authenticate_user!, only: [:new]
+  before_action :authenticate_user!, only: [:new, :edit]
+  before_action :move_to_index, except: [:index, :new, :create]
 
   def index
     @rooms = Room.all
@@ -37,6 +38,11 @@ class RoomsController < ApplicationController
 
   def room_params
     params.require(:room).permit(:image, :room_name, :category_id, :content).merge(user_id: current_user.id)
+  end
+
+  def move_to_index
+    @room = Room.find(params[:id])
+    redirect_to action: :index unless current_user.id == @room.user_id
   end
 
 end
