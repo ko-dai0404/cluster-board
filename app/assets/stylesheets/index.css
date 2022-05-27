@@ -49,7 +49,6 @@
 }
 
 .message {
-  background-color: #1574FF;
   width: calc(100vw - 200px);
 }
 
@@ -131,4 +130,21 @@
 
 .hidden1 {
   display: none;
+}
+
+.form_login_rink {
+  background-color: gray;
+  height: 70px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_rink_message {
+  font-size: 30px;
+}
+
+.field_with_errors {
+  display: contents;
 }
