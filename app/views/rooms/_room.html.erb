@@ -15,7 +15,9 @@
         <%= room.category.category %>
         </div>
         <div>
-        <%= room.created_at %>
+        管理者：
+        <%= room.user.nickname %> /
+        <%= l room.created_at %>
         </div>
       </div>
     </div>

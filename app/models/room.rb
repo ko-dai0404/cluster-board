@@ -8,7 +8,8 @@ class Room < ApplicationRecord
   belongs_to :category
   has_one_attached :image
 
-  has_many :room_users
-  has_many :users, through: :room_users
+  # has_many :room_users
+  # has_many :users, through: :room_users
   has_many :messages
+  belongs_to :user
 end
