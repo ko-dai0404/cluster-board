@@ -85,7 +85,6 @@
 .board_h_main {
   width: calc(100vw - 30vw);
   height: 15vh;
-  padding: 0 20px 0 5px;
 }
 
 .board_h_title {
@@ -137,6 +136,7 @@
 .boaed_h_adm {
   width: 25%;
   height: 100%;
+  padding-left: 100px;
   display: flex;
   align-items: center;
 }

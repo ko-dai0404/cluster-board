@@ -1,9 +1,9 @@
 class RoomsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :edit]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
   before_action :move_to_index, except: [:index, :new, :create]
 
   def index
-    @rooms = Room.all
+    @rooms = Room.all.order("created_at DESC")
   end
 
   def new
@@ -32,6 +32,11 @@ class RoomsController < ApplicationController
     end
   end
 
+  def destroy
+    room = Room.find(params[:id])
+    room.destroy
+    redirect_to root_path
+  end
 
 
   private

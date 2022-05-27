@@ -4,13 +4,11 @@
       <%= message_list.user.nickname %>
     </div>
     <div class="message-date">
-      <!-- 投稿した時刻を出力する -->
       <%= l message_list.created_at %>
     </div>
   </div>
   <div class="lower-message">
     <div class="message-content">
-      <!-- 投稿したメッセージ内容を記述する -->
       <%= message_list.message %>
     </div>
     <%= image_tag message_list.image.variant(resize: '500x500'), class: 'message-image' if message_list.image.attached? %>

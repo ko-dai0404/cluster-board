@@ -17,7 +17,7 @@
             <%= link_to "編集", edit_room_path(room.id), method: :get %>
           </div>
           <div class="board_delete">
-          削除
+          <%= link_to '削除', room_path(room.id), method: :delete %>
           </div>
         </div>
         <% end %>
