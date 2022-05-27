@@ -1,13 +1,19 @@
 <div class="messages">
 <%= render partial: 'message_list', collection: @messages %>
 </div>
-<%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
-<div class="form-input">
-  <%= f.text_field :message, class: 'form-message', placeholder: 'type a message' %>
-  <label class="form-image">
-    <span class="image-file">画像</span>
-    <%= f.file_field :image, class: 'hidden1' %>
-  </label>
-</div>
-<%= f.submit '送信', class: 'form-submit' %>
+<% if user_signed_in? %>
+  <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+  <div class="form-input">
+    <%= f.text_field :message, class: 'form-message', placeholder: 'type a message' %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <%= f.file_field :image, class: 'hidden1' %>
+    </label>
+  </div>
+  <%= f.submit '送信', class: 'form-submit' %>
+  <% end %>
+  <% else %>
+  <div class="form_login_rink">
+  <%= link_to "メッセージを投稿する場合はこちらからログインして下さい", new_user_session_path, class: "login_rink_message" %>
+  </div>
 <% end %>
