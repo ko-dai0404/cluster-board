@@ -7,8 +7,18 @@
     </div>
 
     <div class="board_right">
-      <div class="board_title">
-        <%= link_to room.room_name, room_messages_path(room) %>
+      <div class="board_right_top">
+        <div class="board_title">
+          <%= link_to room.room_name, room_messages_path(room) %>
+        </div>
+        <div>
+          <div class="board_edit">
+          編集
+          </div>
+          <div class="board_delete">
+          削除
+          </div>
+        </div>
       </div>
       <div class="board_sub">
         <div>
