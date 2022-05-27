@@ -27,6 +27,12 @@
   padding-top: 20px;
 }
 
+.board_right_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .board_sub {
   color: #434a54;
   font-size: 16px;
@@ -41,6 +47,17 @@
   padding-left: 10px;
 }
 
+.board_edit {
+  color: black;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.board_delete {
+  color: black;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
 
 /* 掲示板ページ */
 

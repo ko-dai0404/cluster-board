@@ -7,8 +7,20 @@
     </div>
 
     <div class="board_right">
-      <div class="board_title">
-        <%= link_to room.room_name, room_messages_path(room) %>
+      <div class="board_right_top">
+        <div class="board_title">
+          <%= link_to room.room_name, room_messages_path(room) %>
+        </div>
+        <% if user_signed_in? && current_user.id == room.user_id %>
+        <div>
+          <div class="board_edit">
+            <%= link_to "編集", edit_room_path(room.id), method: :get %>
+          </div>
+          <div class="board_delete">
+          削除
+          </div>
+        </div>
+        <% end %>
       </div>
       <div class="board_sub">
         <div>
