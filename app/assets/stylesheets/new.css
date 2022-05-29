@@ -1,42 +1,33 @@
 /* ログインページ */
 
-.session_outer {
+.sessions_outer{
   display: flex;
 }
 
-.session_main {
-  width: calc(100vw - 200px);
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-.session_menu {
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  background-color: #1574FF;
-}
-
-.session_title {
+.session_title{
   font-size: 50px;
   text-align: center;
-  padding: 20px 0 10px;
+  padding: 5px 0 10px;
   color: #ffffff;
+
 }
 
-.field {
-  margin: 35px 80px;
-  border: 1px solid black;
-  background-color: #ffffff;
+.session-btn {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
-.actions {
-  color: #ffffff;
-  margin: 10px 0;
+.session-red-btn {
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
 }
-
 
 /* 新規作成ページ */
 
