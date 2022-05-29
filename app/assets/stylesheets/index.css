@@ -10,6 +10,8 @@
   height: calc(100vh - 15vh);
   padding: 46px 40px 0;
   overflow: scroll;
+  background-color: #FAFAFA;
+  ;
 }
 
 .boards {

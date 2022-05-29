@@ -2,6 +2,8 @@
 
 .sessions_outer{
   display: flex;
+  background-color: #FAFAFA;
+
 }
 
 .session_title{
@@ -33,6 +35,8 @@
 
 .registrations_outer {
   display: flex;
+  background-color: #FAFAFA;
+
 }
 
 
