@@ -1,3 +1,5 @@
+/* ログインページ */
+
 .session_outer {
   display: flex;
 }
@@ -20,9 +22,8 @@
 .session_title {
   font-size: 50px;
   text-align: center;
-  padding: 25px 0 10px;
+  padding: 20px 0 10px;
   color: #ffffff;
-
 }
 
 .field {
@@ -34,4 +35,100 @@
 .actions {
   color: #ffffff;
   margin: 10px 0;
+}
+
+
+/* 新規作成ページ */
+
+.registrations_outer {
+  display: flex;
+}
+
+
+.registration_title {
+  font-size: 50px;
+  text-align: center;
+  padding: 5px 0 10px;
+  color: #ffffff;
+}
+
+.form-wrap {
+  width: 50%;
+  background-color: #1574FF;
+  padding: 20px;
+  margin: auto;
+}
+
+.form-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.form-group:first-child {
+  padding: 0;
+}
+
+.form-text-wrap {
+  width: 100%;
+  height: 20%;
+}
+
+.form-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.indispensable {
+  color: #ffffff;
+}
+
+.input-default {
+  width: 100%;
+  margin-top: 5px;
+  height: 40px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.gender-select {
+  width: 100%;
+  margin-top: 5px;
+  height: 40px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.info-text {
+  color: #888;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.register-btn {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.register-red-btn {
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
 }
