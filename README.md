@@ -59,7 +59,10 @@ Basic認証( ユーザー名: admin, パスワード: 2222 )
   ・検索機能実装
   ・カテゴリー検索機能実装
 
-# データベース設計と画面遷移図
+# 要件定義
+  https://docs.google.com/spreadsheets/d/1_JKc7ulPhrCQBddTdLYjEB6D5y_nD89P_IskyR8FcJc/edit#gid=982722306
+
+# ER図と画面遷移図
   作成していたのですが、エラーのため表示されない状態でエラー対応中です。
 
 # 開発環境
