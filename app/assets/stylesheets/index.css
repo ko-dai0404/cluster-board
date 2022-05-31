@@ -10,8 +10,7 @@
   height: calc(100vh - 15vh);
   padding: 46px 40px 0;
   overflow: scroll;
-  background-color: #FAFAFA;
-  ;
+  background-color: #FFFFFF;
 }
 
 .boards {
@@ -72,7 +71,7 @@
 }
 
 .messages {
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   height: calc(100vh - 15vh - 70px);
   padding: 46px 40px 0;
   overflow: scroll;
